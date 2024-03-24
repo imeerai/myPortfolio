@@ -69,22 +69,23 @@ p,span{
     justify-content: center;
     align-items: center;
 }
+
 .btn{
-    background-color: transparent;
-    font-size: 17px;
-    outline: none;
-    border: 1px solid rgb(255, 255, 255);
+    background: #3f3e3e;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
     border-radius: 5px;
-    padding: 10px 15px;
-    margin-top: 20px;
     cursor: pointer;
 }
 .btn a{
     text-decoration: none;
 }
 .btn:hover{
-    background-color: #000000;
-    border-color: #ff0303;
+    background-color: #fd0606;
 }
 .heading-wrapper{
     display: flex;
@@ -157,40 +158,6 @@ p,span{
     list-style: none;
     margin-right: 5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #navbar .nav-items li{
     margin: 0 1rem;
 }
@@ -208,43 +175,7 @@ p,span{
 #home{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(0, 0, 0);
-}
-#home .text-holder{
-    z-index: 2;
-}
-#home .text-holder h1{
-    font-weight: 300;
-}
-#home .text-holder h1 span{
-    font-size: 90px;
-    color: var(--main-color);
-}
-#home .text-holder h3{
-    font-weight: 300;
-}
-#home .text-holder h3 span{
-    font-size: 34px;
-    color: var(--main-color);
-}
-#home .text-holder .button{
-    display: block;
-    text-align: center;
-}
-#home .hero-img{
-    width: 30rem;
-    height: auto;
-    position: absolute;
-    z-index: 1;
-    right: 12rem;
-    bottom: -5px;
-    pointer-events: none;
-    opacity: 0.6;
-}
-#home .hero-img img{
-    width: 100%;
 }
 #home .social-icons{
     position: absolute;
@@ -277,24 +208,57 @@ p,span{
 #home .social-icons a:hover i{
     color: rgb(0, 0, 0);
 }
-#home .scroll-txt{
-    position: absolute;
-    left: 5rem;
-    bottom: 2rem;
-    text-transform: uppercase;
+
+#home .text-holder{
+    margin-left: 8%;
+    margin-top: 18%;
+
 }
-#home .scroll-txt a{
+#home .text-holder h1{
+    font-size: 50px;
+    color: #db0d0d;
+    margin-bottom: 20px;
+
+}
+#home span{
+    color: orange;
+    font-size: 30px;
+}
+#home .text-holder p{
+    color: #8d8a8a;
+    line-height: 20px;
+    font-size: 20px;
+
+}
+#home .oo{
+    background: #3f3e3e;
+    padding: 10px 18px;
     text-decoration: none;
+    font-weight: bold;
+    color: #fff;
     display: inline-block;
-    font-size: 15px;
-    cursor: pointer;
-    transition: letter-spacing 0.5s ease;
-    text-align: left;
+    margin: 30px 0;
+    border-radius: 5px;
 }
-#home .scroll-txt a:hover{
-    letter-spacing: 2px;
-    color: var(--main-color);
+#home .oo:hover{
+    background-color: #fd0606;
 }
+#home .hero-img{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    
+}
+#home .hero-img img{
+    
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
 /* <================= About =================> */
 #about{
     background: var(--bg-color-1);
@@ -308,7 +272,7 @@ p,span{
 }
 .about-img img{
     width: 100%;
-    border: 10px solid #232323;
+    border: 5px solid #232323;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
 #about .text-wrapper{
@@ -345,9 +309,8 @@ p,span{
     margin: 0;
     padding-left: 1rem;
 }
-#about .btn{
-    margin: 0;
-}
+
+
 /* <================= Services =================> */
 #services{
     background-color: var(--bg-color-2);
