@@ -609,29 +609,37 @@
             <div class="animate-bar"></div>
         </div>
 
-        <div class="container">
-            <form action="#" data-aos="fade-right" data-aos-duration="1200">
+        <div class="container" >
+            <form action="https://api.web3forms.com/submit" data-aos="fade-right" data-aos-duration="1200" method="POST">
                 <div class="title">
                     <h4>Massage Me</h4>
                 </div>
+                <input type="hidden" name="access_key" value="1339cf74-b1b2-4d61-9383-79c705f49ca1">
+                
+
+
 
                 <div class="form-row">
+                    
                     <div class="input-data">
-                        <input type="text" placeholder="Name" required>
+
+                        <input type="text"name="name" placeholder="Name" required>
                     </div>
                     <div class="input-data">
-                        <input type="text" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="input-data">
-                    <input type="text" placeholder="Subject" required>
+                    <input type="subject" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="input-data">
-                    <textarea name="Massage" placeholder="Massage" required></textarea>
+                    <textarea name="Massage" name="message" placeholder="Massage" required></textarea>
                 </div>
-                <div class="form-row">
-                    <input type="submit" value="Send Your Massage" class="btn">
+    
+                <div class="form-now">
+                    <button class="btn" type="submit">Send you massage</button>
                 </div>
+
             </form>
 
             <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
@@ -702,6 +710,15 @@
     <footer>
         <p>23br4 &copy All Rights Reserved</p>
     </footer>
+
+
+
+
+
+
+
+
+
     <!-------------- Jquery Scripts -------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -720,6 +737,21 @@
 
     <!-------------- Local Script -------------->
     <script src="script.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            
+
+//         Email.send({
+//     SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+//     To : '23br078@gmail.com',
+//     From : document.getElementById("email").value,
+//     Subject : "This is the subject",
+//     Body : "And this is the body"
+// }).then(
+// message => alert(message)
+// );}
+    </script> -->
 </body>
 
 </html>
